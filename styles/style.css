@@ -1241,3 +1241,8 @@ color: var(--first-btn-color);
     border-color: var(--first-btn-color);
     background-size: contain;
 }
+
+.btn-color:hover  {
+background: #188CE8;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
