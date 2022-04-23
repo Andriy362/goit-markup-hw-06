@@ -704,8 +704,14 @@ background-color: var(--background-color-next);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--background-color);
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--second-btn-color);
+    transition: border-color 250ms var(--timing-function);
     
+}
+.input-footer:focus
+{
+    transition: border-color 250ms var(--timing-function);
+    border-color: var(--first-btn-color);
 }
 
 
@@ -1091,8 +1097,12 @@ width: 370px;
 
 .form-div:focus-within, 
 .form-div input:focus-within,
-.text-area:focus
+.text-area:focus,
+.svg-tittle:focus
 {
+    transition: 
+    border-color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
     fill: var(--first-btn-color);
     border-color: var(--first-btn-color);
 }
@@ -1103,8 +1113,9 @@ textarea {
     resize: none;
 }
 
+
 .text-area {
-    
+     transition: border-color 250ms var(--timing-function);
     outline: none;
     padding: 12px 16px ;
     cursor: pointer;
@@ -1113,6 +1124,8 @@ textarea {
     box-sizing: border-box;
     border-radius: 4px;
 }
+
+
 .forms-btn {
     transform: translateX(61%);
 
@@ -1139,6 +1152,7 @@ textarea {
 
 }
 .svg-tittle {
+    
 position: absolute;
 top: 11px;
 left: 15px;
@@ -1150,11 +1164,15 @@ left: 15px;
 }
 
 .form-div {
+    
 cursor: pointer;
 }
 
 .form-div input {
-    
+    transition: 
+    border-color 250ms var(--timing-function);
+
+
    
     width: 448px;
     height: 40px;
@@ -1195,12 +1213,12 @@ color: var(--first-btn-color);
 
 }
 .checkbox {
-   
+
     appearance: none;
 }
 
 .svg-checkbox {
-    
+    transition:background-color 250ms var(--timing-function);
     cursor: pointer;
     width: 16px;
     height: 15px;
@@ -1217,6 +1235,7 @@ color: var(--first-btn-color);
     margin-top: 20px;
 }
 .checkbox:checked + .svg-checkbox {
+    transition:background-color 250ms var(--timing-function);
     background-color: var(--first-btn-color);
     background-origin: border-box;
     border-color: var(--first-btn-color);
