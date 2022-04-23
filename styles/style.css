@@ -629,7 +629,7 @@ background-color: var(--background-color-next);
 
 
 .footer-div {
-    margin-left: 70px;
+    margin-left: 60px;
     height: 80px;
     justify-content: baseline;
     display: flex;
@@ -647,7 +647,7 @@ background-color: var(--background-color-next);
 .div-content {
     display: flex;
     align-items: baseline;
-
+ 
 
 }
 .svg-footer {
@@ -671,6 +671,82 @@ background-color: var(--background-color-next);
     color: #afb1b8;
     background: rgba(255, 255, 255, 0.1);
 }
+
+
+
+
+.div-footer {
+    margin-left: 93px;
+
+}
+.footer-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    color: var(--second-btn-color);
+}
+
+.input-footer {
+
+    width: 358px;
+    
+    padding-left: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+   
+    
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--background-color);
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+
+
+
+.input-footer::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+
+.footer-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em; 
+    cursor: pointer;
+    border: none;
+    padding: 10px 69px 10px 24px;
+   
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    margin-left: 12px;
+    position: relative;
+    background: var(--first-btn-color);
+    color: var(--second-btn-color);
+}
+
+
+
+.footer-svg {
+    display: flex;
+    position: absolute;
+   
+   right: 28px;
+   bottom: 13px;
+}
+
+
+
 /* ------------------SELECTION-PORTFOLIO------------ */
 
 .btn-list-another {
@@ -875,7 +951,11 @@ width: 370px;
 
 
 .btn-modal {
-        
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    
     
     width: 30px;
     height: 30px;
@@ -897,25 +977,25 @@ width: 370px;
 
 
 
+.clas-svg {
+    position: relative; 
 
+}
 
 
 .modal {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    transform: translate(-50%, -50%);
-
+    
     position: absolute;
     top: 50%;
     left: 50%;
-
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
+    bottom: 0%;
     min-width: 528px;
     min-height: 581px;
-    
     transition: transform 250ms var(--timing-function);
 
-    
     background: var(--second-btn-color);
     box-shadow: 
         0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -948,4 +1028,166 @@ width: 370px;
     
     transform: translate(-50%, -50%) scale(2);
     
+}
+
+
+
+
+
+
+
+
+
+
+.tex-form {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+ 
+    
+    padding-bottom: 12px;
+    
+    color: var(--first-title-color);
+}
+
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   
+}
+   
+.form-div  {
+    
+    position: relative;
+}
+
+
+.form-lable {
+    
+     
+
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--second-title-color);
+}
+.input-dis {
+    padding-left: 42px;
+}
+
+
+textarea {
+    resize: none;
+}
+.text-area {
+    
+    padding: 12px 16px ;
+    
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.forms-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border: none;
+    
+    
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    
+   
+    background: var(--first-btn-color);
+    color: var(--second-btn-color);
+   margin-left: 70px;
+   margin-top: 30px;
+
+}
+.svg-tittle {
+position: absolute;
+top: 11px;
+left: 15px;
+
+}
+
+.form {
+    padding: 40px;
+}
+
+
+.form-div input {
+   
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.text-area::placeholder {
+    
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+    
+}
+
+
+.text-caption {
+text-decoration-line: underline;
+
+color: var(--first-btn-color);
+}
+
+.div-checkbox {
+
+
+}
+.caption {
+    
+position: absolute;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);
+
+}
+.checkbox {
+
+    appearance: none;
+}
+
+.svg-checkbox {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--first-title-color);
+    border-radius: 2px;
+}
+.checkbox-lable {
+    position: absolute;
+    margin-top: 20px;
+    display: inline-block;
+    
+    
+}
+.checkbox:checked + .svg-checkbox {
+    background-color: #2196f3;
+    background-origin: border-box;
+    border-color: #2196f3;
+    background-size: contain;
 }
