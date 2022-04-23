@@ -694,7 +694,7 @@ background-color: var(--background-color-next);
 .input-footer {
 
     width: 358px;
-    
+    outline: none;
     padding-left: 15px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -947,7 +947,9 @@ width: 370px;
 }
 
 
-
+.clas-svg:hover {
+    fill: var(--first-btn-color);
+}
 
 
 .btn-modal {
@@ -1085,21 +1087,16 @@ width: 370px;
     cursor: pointer;
     padding-left: 42px;
 }
-.input-dis {
-   
-}
 
 
-.input-dis:focus ~ .svg-tittle {
-    fill: #2196f3;
+.form-div:focus-within, 
+.form-div input:focus-within,
+.text-area:focus
+{
+    fill: var(--first-btn-color);
+    border-color: var(--first-btn-color);
 }
-/* .input-dis:hover, .input-dis:focus {
-    border-color: #2196f3;
-} */
 
-.text-area:focus {
-    border-color: #2196f3;
-}
 
 
 textarea {
@@ -1107,9 +1104,10 @@ textarea {
 }
 
 .text-area {
+    
     outline: none;
     padding: 12px 16px ;
-    
+    cursor: pointer;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -1164,15 +1162,10 @@ cursor: pointer;
     box-sizing: border-box;
     border-radius: 4px;
     outline: none;
-    
-    
-    
+
     margin: 0;
 }
-.form-div input:focus {
-    border-color: #2196f3;
 
-}
 .text-area::placeholder {
     
     font-size: 12px;
@@ -1190,15 +1183,9 @@ text-decoration-line: underline;
 color: var(--first-btn-color);
 }
 
-/* .div-checkbox {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-} */
 .caption {
+    
     margin-left: 7px;
 
     font-size: 14px;
@@ -1208,11 +1195,12 @@ color: var(--first-btn-color);
 
 }
 .checkbox {
-    
+   
     appearance: none;
 }
 
 .svg-checkbox {
+    
     cursor: pointer;
     width: 16px;
     height: 15px;
@@ -1220,6 +1208,8 @@ color: var(--first-btn-color);
     border-radius: 2px;
 }
 .checkbox-lable {
+    
+  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1227,8 +1217,8 @@ color: var(--first-btn-color);
     margin-top: 20px;
 }
 .checkbox:checked + .svg-checkbox {
-    background-color: #2196f3;
+    background-color: var(--first-btn-color);
     background-origin: border-box;
-    border-color: #2196f3;
+    border-color: var(--first-btn-color);
     background-size: contain;
 }
